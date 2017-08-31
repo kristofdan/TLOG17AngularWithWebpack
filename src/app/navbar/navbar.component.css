@@ -1,0 +1,11 @@
+#bootstrap-override-navbar nav{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: limegreen;
+}
+
+.active {
+  background-color: #ffff00 !important;
+}

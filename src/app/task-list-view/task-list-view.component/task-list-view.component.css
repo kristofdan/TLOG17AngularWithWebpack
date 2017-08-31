@@ -1,0 +1,27 @@
+#bootstrap-override-tasklist .edit-button{
+  background-color: aqua;
+}
+
+#add-button-in-dayview{
+  margin-top: 30px;
+  max-width: 150px;
+  background-color: green;
+}
+
+#task-adding-form{
+  visibility: hidden;
+  margin-top: 50px;
+}
+
+#bootstrap-override-tasklist .task-adding-form-group{
+  width: 60%;
+}
+
+#bootstrap-override-tasklist .short-input-field{
+  width: 30%;
+}
+
+#new-task-submit-button{
+  margin: 20px auto 20px auto;
+  width: 80px;
+}

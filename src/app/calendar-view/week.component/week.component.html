@@ -1,0 +1,7 @@
+<td *ngFor="let day of week.getDays()" [ngSwitch]="day.type"
+    [class.work-day]="day.type == 'work'"
+    [class.simple-day]="day.type == 'simple'"
+    (click)="activate(day.date,$event)">
+  <simple-day *ngSwitchCase="'simple'" [day]="day"></simple-day>
+  <work-day *ngSwitchCase="'work'" [day]="day" (click)="activate(day.date)"></work-day>
+</td>

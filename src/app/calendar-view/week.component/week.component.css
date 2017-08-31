@@ -1,0 +1,11 @@
+.work-day {
+  background-color: gold;
+}
+
+.negative-extra-min span{
+  color: red;
+}
+
+.positive-extra-min span{
+  color: green;
+}

@@ -1,0 +1,16 @@
+<div id="bootstrap-override-calendar">
+
+  <div class="container-fluid div-below-navbar">
+    <div class="row">
+      <div class="col-sm-9">
+        <calendar-table #table></calendar-table>
+        <pager (onClicked)="table.changeMonth($event)"></pager>
+      </div>
+      <div class="col-sm-3 sidebar">
+        <div class="sidebar-separator"></div>
+        <monthly-statistics></monthly-statistics>
+      </div>
+    </div>
+  </div>
+
+</div>

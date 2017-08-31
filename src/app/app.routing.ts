@@ -1,11 +1,12 @@
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
+import { CalendarViewComponent } from './calendar-view/calendar-view.component/calendar-view.component';
+import { TaskListViewComponent } from './task-list-view/task-list-view.component/task-list-view.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent}
+    { path: '', redirectTo: '/calendar', pathMatch: 'full' },
+    { path: 'calendar', component: CalendarViewComponent },
+    { path: 'task-list', component: TaskListViewComponent },
 ];
 
 export const routing = RouterModule.forRoot(routes);

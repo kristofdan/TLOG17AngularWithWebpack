@@ -1,0 +1,12 @@
+<table id="calendar-table" class="table table-bordered">
+  <caption id={{this.date}}></caption>
+  <thead>
+  <tr>
+    <th *ngFor="let dayName of daysOfWeek">{{dayName}}</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let currentWeek of month.getWeeks()" week-component [week]="currentWeek">
+    </tr>
+  </tbody>
+</table>

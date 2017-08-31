@@ -1,8 +1,48 @@
 // styles in src/style directory are applied to the whole page
-body {
-    background: #0147A7;
-    color: #fff;
+
+.div-below-navbar{
+    margin-top: 75px;
 }
-a {
-    color: #03A9F4;
+
+#calendar-table, #tasklist-table{
+    table-layout: fixed;
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#calendar-table caption, #calendar-table th,
+#tasklist-table caption, #tasklist-table th{
+    text-align: center;
+}
+
+#calendar-table caption,
+#tasklist-table caption{
+    font-size: 2em;
+}
+
+#bootstrap-override-app-root .sidebar{
+    position: fixed;
+    top: 75px;
+    right: 0;
+    text-align: center;
+}
+
+.sidebar-separator{
+    float: left;
+    width: 3px;
+    height: 85vh;
+    background-color: green;
+}
+
+#bootstrap-override-app-root .statistics-table{
+    margin: auto;
+    margin-bottom: 75px;
+    margin-left: 10px;
+    width: auto;
+    text-align: left;
+}
+
+form{
+    margin-left: 10px;
 }

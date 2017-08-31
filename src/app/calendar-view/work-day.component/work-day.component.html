@@ -1,0 +1,5 @@
+<a routerLink="/task-list">{{day.date}}</a>
+<br>
+<span [style.color]="day.extraMinutes >= 0 ? 'green' : 'red'">
+  {{day.extraMinutes}}
+</span>

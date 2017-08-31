@@ -1,0 +1,37 @@
+version: '2'
+services:
+  tlog-ui:
+    image: polc/tlog16angular
+    container_name: tlog-ui
+    networks:
+    - tlog
+    ports:
+    - "9090:80"
+  tlog-backend:
+    image: polc/tlog16rs
+    container_name: tlog-backend
+    networks:
+    - tlog
+    ports:
+    - "9080:8080"
+    environment:
+    - DB_USER=timelogger
+    - DB_PASS=633Ym2aZ5b9Wtzh4EJc4pANx
+    - DB_URL=jdbc:mariadb://tlog-db:3306/timelogger
+  tlog-db:
+    image: mariadb:5.5.51
+    container_name: tlog-db
+    networks:
+    - tlog
+    volumes:
+    - "./database:/var/lib/mysql"
+    ports:
+    - "9001:3306"
+    environment:
+    - MYSQL_DATABASE=timelogger
+    - MYSQL_USER=timelogger
+    - MYSQL_PASSWORD=633Ym2aZ5b9Wtzh4EJc4pANx
+    - MYSQL_ROOT_PASSWORD=633Ym2aZ5b9Wtzh4EJc4pANx
+networks:
+  tlog:
+    driver: bridge

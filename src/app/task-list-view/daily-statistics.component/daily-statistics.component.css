@@ -1,0 +1,17 @@
+caption{
+  font-size: 1.4em;
+  color: darkolivegreen;
+}
+
+.right-aligned-column{
+  text-align: right;
+}
+
+
+#day-changing-form{
+  visibility: hidden;
+}
+
+#day-changing-form-group{
+  width: 90%;
+}
